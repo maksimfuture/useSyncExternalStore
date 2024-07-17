@@ -40,8 +40,8 @@ export const TodoList = () => {
         id: Math.floor(Math.random() * 1000).toString(),
         title: data.get("title") as string,
       };
-      console.log(newTodos);
       newTodos.set(newTodo.id, newTodo);
+
       return newTodos;
     });
   };
